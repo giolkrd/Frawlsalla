@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../Assets/Icon/frawlsalla-logo.png">
+    <title>Play Now - Frawlsalla</title>
+
+    <link rel="stylesheet" href="../CSS/HeaderFooterStyle.css">
+    <link rel="stylesheet" href="../CSS/RegisterStyle.css">
+    <script src="../JS/MobileInterfaceScript.js" defer></script>
+    <script src="../JS/Register-Validation.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="logo">
+            <a href="../HTML/Home.html"><img src="../Assets/Icon/frawlsalla-logo.png"></a>
+        </div>
+
+        <div class="mobile-navbar-bar">
+            <a href="javascript:void(0);" onclick="mobileBarClick()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="navbar" id="navbar-menu">
+            <div class="navbar-item">
+                <a href="Home.html">HOME</a>
+            </div>
+
+            <div class="navbar-item">
+                <a href="javascript:void(0);" onclick="dropDownClick()" class="dropbtn collapse" id="dropbtnbar">GAME
+                    INFO<i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content collapse" id="dropdown-content-main">
+                    <a href="Screenshot.html">SCREENSHOTS</a>
+                    <a href="Characters.html">CHARACTERS</a>
+                </div>
+            </div>
+
+
+            <div class="navbar-item">
+                <a href="Events.html">EVENTS</a>
+            </div>
+        </div>
+
+        <div class="button-play" id="button-play-now">
+            <a href="Register.html">PLAY NOW</a>
+        </div>
+
+    </div>
+
+    <div class="content">
+        <div class="regform-container">
+            <div class="left-container">
+                <img src="../Assets/Characters/Cassidy.png" alt="">
+            </div>
+
+            <div class="right-container hide" id="success-registered-container">
+                <div class="success-registered">
+                    <h1 id="registered-name"></h1>   <!--Disini diganti dengan input query parameter!-->
+                    <p>You are successfully registered! Have fun...</p>
+                    <div class="submit-button-container">
+                        <button onclick="location.href = 'Home.html'" class="btn-submit">BACK TO HOME</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-container" id="regform-input-container">
+                <div class="regform-title">
+                    <h1>REGISTRATION FORM</h1>
+                </div>
+
+                <form id="form" action="../HTML/Register.html" method="GET">
+                    <div class="row">
+                        <div class="column-label">
+                            <label id="lbl-name">Name</label>
+                        </div>
+                        <div class="column-form">
+                            <input type="text" id="txt-name" name="name" placeholder="">
+                        </div>
+                        <div class="column-error">
+                            <label class="lbl-error" id="lbl-error-name"></label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column-label">
+                            <label id="lbl-gender">Gender</label>
+                        </div>
+                        <div class="column-form" id="gender-form">
+                            <div class="gender-container">
+                                <input type="radio" id="rb-gender-male" name="gender" value="male">
+                                <label for="rb-gender-male">Male</label>
+                            </div>
+
+                            <div class="gender-container">
+                                <input type="radio" id="rb-gender-female" name="gender" value="female">
+                                <label for="rb-gender-female">Female</label>
+                            </div>
+
+                            <div class="gender-container">
+                                <input type="radio" id="rb-gender-other" name="gender" value="other">
+                                <label for="rb-gender-other">Other</label>
+                            </div>
+
+                        </div>
+                        <div class="column-error">
+                            <label class="lbl-error" id="lbl-error-gender"></label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column-label">
+                            <label id="lbl-email">Email Address</label>
+                        </div>
+                        <div class="column-form">
+                            <input type="text" id="txt-email" name="email" placeholder="">
+                        </div>
+                        <div class="column-error">
+                            <label class="lbl-error" id="lbl-error-email"></label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column-label">
+                            <label id="lbl-password">Password</label>
+                        </div>
+                        <div class="column-form">
+                            <input type="password" id="txt-password" name="password" placeholder="">
+                        </div>
+                        <div class="column-error">
+                            <label class="lbl-error" id="lbl-error-password"></label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column-label">
+                            <label id="lbl-confirm-password">Confirm Your Password</label>
+                        </div>
+                        <div class="column-form">
+                            <input type="password" id="txt-confirm-password" name="confPassword" placeholder="">
+                        </div>
+                        <div class="column-error">
+                            <label class="lbl-error" id="lbl-error-confirm-password"></label>
+                        </div>
+                    </div>
+
+                    <div class="term-condition-container">
+                        <div class="checkbox-term-condition" id="cb-term-condition-container">
+                            <input type="checkbox" id="cb-term-condition" name="termCondition"
+                                value="agreeTermCondition" >
+                        </div>
+                        <div class="label-term-condition">
+                            <label class="lbl-term-condition" id="lbl-tc" for="cb-term-condition">I accept the terms and
+                                conditions of Frawlsalla Company</label>
+                        </div>
+                    </div>
+
+                    <div class="submit-button-container">
+                        <input type="submit" name="btnSubmit" class="btn-submit" value="REGISTER">
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="copyright">
+            <p>© 2021 Frawlsalla, All Rights Reserved.</p>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.instagram.com/brawlhalla/" target="_blank"><img id="img-instagram"
+                    src="../Assets/Icon/instagram-icon.png"></a>
+            <a href="https://www.facebook.com/Brawlhalla/" target="_blank"><img id="img-facebook"
+                    src="../Assets/Icon/facebook-icon.png"></a>
+            <a href="https://twitter.com/Brawlhalla" target="_blank"><img id="img-twitter"
+                    src="../Assets/Icon/twitter-icon.png"></a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

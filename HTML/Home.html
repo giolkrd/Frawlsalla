@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../Assets/Icon/frawlsalla-logo.png">
+    <title>Home - Frawlsalla </title>
+
+    <link rel="stylesheet" href="../CSS/HeaderFooterStyle.css">
+    <link rel="stylesheet" href="../CSS/HomeStyle.css">
+    <script src="../JS/MobileInterfaceScript.js" defer></script>
+    <script src="../JS/jquery-3.5.1.min.js" defer></script>
+    <script src="../JS/Image-Slider.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="logo">
+            <a href="../HTML/Home.html"><img src="../Assets/Icon/frawlsalla-logo.png"></a>
+        </div>
+
+        <div class="mobile-navbar-bar">
+            <a href="javascript:void(0);" onclick="mobileBarClick()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="navbar" id="navbar-menu">
+            <div class="navbar-item">
+                <a href="Home.html" id="selected-menu">HOME</a>
+            </div>
+
+            <div class="navbar-item">
+                <a href="javascript:void(0);" onclick="dropDownClick()" class="dropbtn collapse" id="dropbtnbar">GAME
+                    INFO<i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content collapse" id="dropdown-content-main">
+                    <a href="Screenshot.html">SCREENSHOTS</a>
+                    <a href="Characters.html">CHARACTERS</a>
+                </div>
+            </div>
+
+
+            <div class="navbar-item">
+                <a href="Events.html">EVENTS</a>
+            </div>
+        </div>
+
+        <div class="button-play" id="button-play-now">
+            <a href="Register.html">PLAY NOW</a>
+        </div>
+
+    </div>
+
+    <div class="banner">
+        <div class="banner-container">
+            <a href="../HTML/Events.html"><img class="slide" src="../Assets/Events/HeatwaveEvent.jpg"></a>
+        </div>
+
+        <div class="banner-container">
+            <a href="../HTML/Events.html"><img class="slide" src="../Assets/Events/Bloomhalla.jpg"></a>
+        </div>
+
+        <div class="banner-container">
+            <a href="../HTML/Events.html"><img class="slide" src="../Assets/Events/BackToSchool.jpg"></a>
+        </div>
+
+        <div class="banner-container">
+            <a href="../HTML/Events.html"><img class="slide" src="../Assets/Events/JotunArena.jpg"></a>
+        </div>
+
+        <div class="banner-container">
+            <a href="../HTML/Events.html"><img class="slide" src="../Assets/Events/LuckOBrawl.jpg"></a>
+        </div>
+
+        <div class="banner-container">
+            <a href="../HTML/Events.html"><img class="slide" src="../Assets/Events/Patch 3.42.jpg"></a>
+        </div>
+
+        <div class="dot-container">
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="upper-body">
+
+            <div class="image-body">
+                <img src="../Assets/Homepage Info/info-1.jpg">
+            </div>
+
+            <div class="text-body">
+                <div class="text-title">
+                    <h2>PLAY HOW YOU WANT<br>ONLINE – OFFLINE<br>CASUAL – COMPETITIVE</h2>
+                </div>
+
+                <div class="text-content">
+                    <p>
+                        Play locally with friends, fight in chaotic Free-For-All matches online and offline, team up for
+                        2v2 battles, or climb the Ranked ladder to Platinum and beyond. There’s a little something for
+                        everyone.
+                    </p>
+                    <p>
+                        If you’re looking to unwind with friends, or if you’re aiming to carve your name into the
+                        pillars of the Frawlsalla Power Rankings, you can play Frawlsalla however and whenever you want.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="lower-body">
+
+            <div class="text-body">
+                <div class="text-title">
+                    <h2>CHOOSE A LEGEND<br>BECOME A LEGEND</h2>
+                </div>
+
+                <div class="text-content">
+                    <p>
+                        Over 40 Legends to chose from, each with unique movesets, signature abilities, stats, weapon
+                        combinations and flair to suit your personal playstyle. Master one, or learn them all.
+                    </p>
+                    <p>
+                        More legends continue to join the fight in an ever-expanding roster of those who fight for
+                        glory, honor, and bragging rights in the Brawlhalla arenas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image-body">
+                <img src="../Assets/Homepage Info/info-2.png">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        <div class="copyright">
+            <p>© 2021 Frawlsalla, All Rights Reserved.</p>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.instagram.com/brawlhalla/" target="_blank"><img id="img-instagram"
+                    src="../Assets/Icon/instagram-icon.png"></a>
+            <a href="https://www.facebook.com/Brawlhalla/" target="_blank"><img id="img-facebook"
+                    src="../Assets/Icon/facebook-icon.png"></a>
+            <a href="https://twitter.com/Brawlhalla" target="_blank"><img id="img-twitter"
+                    src="../Assets/Icon/twitter-icon.png"></a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

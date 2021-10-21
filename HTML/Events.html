@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../Assets/Icon/frawlsalla-logo.png">
+    <title>Events - Frawlsalla</title>
+
+    <link rel="stylesheet" href="../CSS/HeaderFooterStyle.css">
+    <link rel="stylesheet" href="../CSS/EventStyle.css">
+    <script src="../JS/MobileInterfaceScript.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="logo">
+            <a href="../HTML/Home.html"><img src="../Assets/Icon/frawlsalla-logo.png"></a>
+        </div>
+
+        <div class="mobile-navbar-bar">
+            <a href="javascript:void(0);" onclick="mobileBarClick()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="navbar" id="navbar-menu">
+            <div class="navbar-item">
+                <a href="Home.html">HOME</a>
+            </div>
+
+            <div class="navbar-item">
+                <a href="javascript:void(0);" onclick="dropDownClick()" class="dropbtn collapse" id="dropbtnbar">GAME
+                    INFO<i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content collapse" id="dropdown-content-main">
+                    <a href="Screenshot.html">SCREENSHOTS</a>
+                    <a href="Characters.html">CHARACTERS</a>
+                </div>
+            </div>
+
+
+            <div class="navbar-item">
+                <a href="Events.html" id="selected-menu">EVENTS</a>
+            </div>
+        </div>
+
+        <div class="button-play" id="button-play-now">
+            <a href="Register.html">PLAY NOW</a>
+        </div>
+
+    </div>
+
+    <div class="content" id="content-main">
+        <div class="content-title">
+            <h1>CURRENT EVENTS</h1>
+            <p>Catch up on current events announcements</p>
+        </div>
+
+        <div class="content-items">
+            <div class="upper-content">
+                <div class="event-card" id="eventcard">
+                    <div class="upper-card">
+                        <img src="../Assets/Events/HeatwaveEvent.jpg">
+                    </div>
+                    <div class="lower-card">
+                        <h2>Heatwave Summer Event is here!!</h2>
+                    </div>
+                    <div class="description-card">
+                        <p>The hottest seasonal event has arrived in Valhalla with exclusive, limited-time cosmetic
+                            items! Celebrate with new Skins, Hotshot Vector and Island Azoth, a new Heatwave 2020
+                            Podium, seven other exclusive summer Skins, a Hot Lava KO Effect, and so much more.</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="upper-card">
+                        <img src="../Assets/Events/Bloomhalla.jpg">
+                    </div>
+                    <div class="lower-card">
+                        <h2>Welcome to BloomHalla!!</h2>
+                    </div>
+                    <div class="description-card">
+                        <p>3, 2, 1 – Bloom! We’re turning over a new leaf with Frawlsalla’s first ever spring themed
+                            seasonal event. This event brings a swarm of new content including Seasonal Skins for Jaeyun
+                            and Xull, a new Title, UI takeover, main menu music, and more! </p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="upper-card">
+                        <img src="../Assets/Events/BackToSchool.jpg">
+                    </div>
+                    <div class="lower-card">
+                        <h2>Back To School Event is Here!!</h2>
+                    </div>
+                    <div class="description-card">
+                        <p>School is now in session as we celebrate the Back to School Event with seasonal Skins
+                            including new Skins for Lin Fei and Fait, Home Team Colors, bonus Gold on login, and more!
+                            You can find these exclusive, limited-time items in Mallhalla by following the apples. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lower-content">
+                <div class="event-card">
+                    <div class="upper-card">
+                        <img src="../Assets/Events/JotunArena.jpg">
+                    </div>
+                    <div class="lower-card">
+                        <h2>All New Jotun BattlePass!!</h2>
+                    </div>
+                    <div class="description-card">
+                        <p>A Jötunn Winter storm has swept into Frawlsalla as the newest Battle Pass season! Aurora
+                            Brynn rises as her mightiest Valkyrie form with her cosmic steed, Midnight, to battle at the
+                            World’s End Arena. This third season of Frawlsalla’s Battle Pass features 85 tiers of brand
+                            new exclusive content unlockable by playing Frawlhsalla and completing missions.</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="upper-card">
+                        <img src="../Assets/Events/LuckOBrawl.jpg">
+                    </div>
+                    <div class="lower-card">
+                        <h2>Luck O' Brawl Event Starts Here!!</h2>
+                    </div>
+                    <div class="description-card">
+                        <p>The Luck o’ the Brawl Event continues to spring on and features a new Skin for Jhala, four
+                            other exclusive Skins, Lucky Clover Colors, +250 Gold login bonus, and other seasonal items!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="upper-card">
+                        <img src="../Assets/Events/Patch 3.42.jpg">
+                    </div>
+                    <div class="lower-card">
+                        <h2>The Biggest Patch is Coming!!</h2>
+                    </div>
+                    <div class="description-card">
+                        <p>We’re celebrating the most prestigious online championship of the year with a MTN DEW AMP
+                            GAME FUEL Championship Event that includes the first earnable items, daily login bonus Gold,
+                            and more! We’re also continuing to roll out language options, and now localization is
+                            available on PS4 and Xbox One. Additionally, we’ve added new test features, made some game
+                            improvements, fixed a few bugs, and more. </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="copyright">
+            <p>© 2021 Frawlsalla, All Rights Reserved.</p>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.instagram.com/brawlhalla/" target="_blank"><img id="img-instagram"
+                    src="../Assets/Icon/instagram-icon.png"></a>
+            <a href="https://www.facebook.com/Brawlhalla/" target="_blank"><img id="img-facebook"
+                    src="../Assets/Icon/facebook-icon.png"></a>
+            <a href="https://twitter.com/Brawlhalla" target="_blank"><img id="img-twitter"
+                    src="../Assets/Icon/twitter-icon.png"></a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

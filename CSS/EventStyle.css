@@ -1,0 +1,120 @@
+
+
+.content-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content-title h1{
+    text-align: center;
+    color: #ff7200;
+    font-size: 30px;
+}
+
+.content-items{
+    display: flex;  
+    flex-direction: column;
+}
+
+.upper-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lower-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.event-card{
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+    height: 40%;
+    width: 30%;
+    background-color: #0e3e5b;
+    
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.event-card:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+.event-card:hover .description-card{
+    display: block;
+}
+
+.event-card .upper-card{
+    width: 100%;
+    height: 100%;
+}
+
+.event-card .upper-card img{
+    width: 100%;
+    height: 100%;
+}
+
+.lower-card{
+    display: flex;
+    justify-content: center;
+    font-size:small;
+    text-align: center;
+    color: white;
+    margin: 0 10px;
+}
+
+.description-card{
+    display: none;
+    height: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size:smaller;
+    text-align: justify;
+    background: #0e3e5b;
+    color: white;
+}
+
+p{
+    outline: 2px red;
+}
+/* MEDIA SCREEN */
+
+@media screen and (max-width: 800px) {
+
+    .content-items{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .event-card{
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        width: 90%;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        opacity: 1;
+    }
+    
+    .upper-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lower-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description-card{
+        height: fit-content;
+    }
+}
